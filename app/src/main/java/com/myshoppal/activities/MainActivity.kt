@@ -1,7 +1,8 @@
-package com.myshoppal
+package com.myshoppal.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.myshoppal.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

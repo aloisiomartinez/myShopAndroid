@@ -1,10 +1,11 @@
-package com.myshoppal
+package com.myshoppal.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import com.myshoppal.R
 
 @Suppress("DEPRECATION")
 class SplashActivity : AppCompatActivity() {
