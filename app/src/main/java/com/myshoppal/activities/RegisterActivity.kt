@@ -1,19 +1,16 @@
 package com.myshoppal.activities
 
-import android.content.Intent
 import android.os.Build
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.view.WindowInsets
 import android.view.WindowManager
-import androidx.appcompat.app.AppCompatActivity
 import com.myshoppal.R
 
-
-class SplashActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.activity_register)
 
         @Suppress("DEPRECATION")
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
@@ -24,14 +21,5 @@ class SplashActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-
-        Handler().postDelayed(
-            {
-                // Launch the Main Activity
-                startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
-                finish() // Call this when your activity is done and should be closed.
-            },
-            2500
-        )
     }
 }
