@@ -8,6 +8,7 @@ import android.text.TextUtils
 import android.view.WindowInsets
 import android.view.WindowManager
 import com.myshoppal.R
+import kotlinx.android.synthetic.main.activity_register.btn_register
 import kotlinx.android.synthetic.main.activity_register.cb_terms_and_condition
 import kotlinx.android.synthetic.main.activity_register.et_confirm_password
 import kotlinx.android.synthetic.main.activity_register.et_email
@@ -37,6 +38,10 @@ class RegisterActivity : BaseActivity() {
         tv_login.setOnClickListener {
             val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
             startActivity(intent)
+        }
+
+        btn_register.setOnClickListener {
+            validateRegisterDetails()
         }
     }
 
